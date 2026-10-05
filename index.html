@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed El.Biany | Motion Graphics &amp; Video Editor</title>
+<meta name="description" content="Ahmed El.Biany: motion graphics, reels and video content that get results.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta name="theme-color" content="#02030a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="nebula" id="nebula" aria-hidden="true"></div>
+<div class="glow-cursor" id="glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ahmed El.Biany home">AHMED EL.BIANY</a>
+    <nav class="links" aria-label="Main">
+      <a href="#intro">About</a>
+      <a href="#motion">Motion graphics</a>
+      <a href="#reels">Reels</a>
+      <a href="#book">Contact</a>
+    </nav>
+    <a class="btn primary sm" href="#book">Book a free call</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="horizon" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <div class="badge"><i></i>Motion Graphics &amp; Video Editor</div>
+        <h1 id="h1" aria-label="Hi, I'm Ahmed El.Biany"></h1>
+        <p class="lead">I create motion graphics, reels and marketing videos that get your brand seen, remembered and chosen.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#book">Book a free 30-min meeting</a>
+          <a class="btn ghost" href="#intro">Watch my story</a>
+        </div>
+      </div>
+      <div class="rig-wrap" aria-hidden="true">
+        <div class="rig" id="rig">
+          <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+          <div class="core"></div>
+          <div class="me"><img src="assets/ahmed.webp" alt="Ahmed El.Biany" width="800" height="1200" fetchpriority="high"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="track"></div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Our results">
+    <div class="wrap">
+      <div class="stat-row">
+        <div class="stat rv" style="--d:0s"><div class="num" data-to="150" data-suffix="+">0</div><p>Clients growing with me</p></div>
+        <div class="stat rv" style="--d:.12s"><div class="num" data-to="1000" data-suffix="+">0</div><p>Videos delivered</p></div>
+        <div class="stat rv" style="--d:.24s"><div class="num" data-to="10" data-suffix="M+">0</div><p>Views generated</p></div>
+        <div class="stat rv" style="--d:.36s"><div class="num" data-to="98" data-suffix="%">0</div><p>Client satisfaction</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO VIDEO -->
+  <section id="intro">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title"><span class="mask"><span class="mi">Featured Work</span></span></h2>
+        <p class="rv">I'm a creative and marketer. Press play to see how I work and some of the results I have delivered.</p>
+      </div>
+      <div class="frame rv s">
+        <button class="screen" id="introBtn" data-id="cMbMOmZcgaY" data-type="w" aria-label="Play the Ahmed El.Biany intro video">
+          <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="cap"><i></i>Ahmed El.Biany showreel</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTION GRAPHICS -->
+  <section id="motion">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title"><span class="mask"><span class="mi">Motion graphics</span></span></h2>
+        <p class="rv">Animated stories that explain your product, hold attention and make people act.</p>
+      </div>
+      <div class="grid4" id="motionGrid"></div>
+    </div>
+  </section>
+
+  <!-- REELS -->
+  <section id="reels">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="title"><span class="mask"><span class="mi">Reels</span></span></h2>
+        <p class="rv">Short videos made for the feed. Fast hooks, sharp edits and content people share.</p>
+      </div>
+    </div>
+    <div class="scroller rv" id="scroller"></div>
+    <div class="wrap">
+      <div class="reels-bar rv">
+        <div class="prog"><i id="prog"></i></div>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Previous reels"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="arrow" id="next" aria-label="Next reels"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="book">
+    <div class="wrap">
+      <div class="cta-box rv s">
+        <div class="orb" aria-hidden="true"></div>
+        <h2>Ready to grow? Book a free 30-minute meeting.</h2>
+        <p>Tell me about your brand and goals. I will show you where the growth is and how I can help you reach it.</p>
+        <a class="btn primary big" id="ctaBtn" target="_blank" rel="noopener" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Book your free meeting
+        </a>
+        <div class="pills"><span>30 minutes</span><span>Free</span><span>No commitment</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <a class="wa-line rv" id="waLine" target="_blank" rel="noopener" href="#" aria-label="Contact Ahmed El.Biany on WhatsApp">
+        <div class="wa-left">
+          <span class="wa-ic"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+          <div><b>Contact me on WhatsApp</b><small>+20 108 029 3128</small></div>
+        </div>
+        <span class="btn wa">Start a chat</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Ahmed El.Biany. All rights reserved.</span>
+    <span>Motion Graphics &amp; Video Editor</span>
+  </div>
+</footer>
+
+<a class="fab" id="fab" target="_blank" rel="noopener" href="#" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- video modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
+  <div class="m-back" id="mBack"></div>
+  <button class="m-close" id="mClose" aria-label="Close video"><svg viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <div class="m-box">
+    <div class="m-frame v" id="mFrame"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
